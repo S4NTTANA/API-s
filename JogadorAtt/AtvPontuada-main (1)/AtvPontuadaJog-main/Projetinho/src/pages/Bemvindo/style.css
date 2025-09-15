@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #d00000, #005bbb), /* Vermelho e azul do Arsenal */
+                url('../../assets/images/backg.logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.pagina-bem-vindo {
+    text-align: center;
+    padding: 0;
+    min-height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(208, 0, 0, 0.7), /* Vermelho Arsenal */
+        rgba(0, 91, 187, 0.7)  /* Azul Arsenal */
+    );
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffffff; /* Branco para hover */
+}
+
+.conteudo {
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(208, 0, 0, 0.7), /* Vermelho Arsenal */
+        rgba(255, 255, 255, 0.7) /* Branco */
+    );    
+}
+
+.imagem-banner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #132b02;
+    text-align: center;
+    padding: 0;
+    min-height: 5vh; 
+    border-radius: 5%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(2, 24, 2, 0.7),
+        rgba(0, 91, 187, 0.7), /* Azul Arsenal */
+        rgba(208, 0, 0, 0.7)  /* Vermelho Arsenal */
+    );    
+}
+
+.botoes-download {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 2px solid #005bbb; /* Azul Arsenal */
+    color: #005bbb; /* Azul Arsenal */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.botao:hover {
+    background-color: #005bbb; /* Azul Arsenal */
+    border-color: #d00000; /* Vermelho Arsenal */
+    color: #ffffff; /* Branco para contraste */
+}
+
+.rodape {
+    margin-top: 30px;
+}
+
+.rodape .menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rodape .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.rodape .menu a:hover {
+    color: #ffffff; /* Branco para hover */
+}

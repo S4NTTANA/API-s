@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Fundo gradiente com as cores do Arsenal */
+    background: linear-gradient(
+        to bottom right,
+        rgba(208, 0, 0, 0.7),  /* Vermelho do Arsenal */
+        rgba(0, 136, 247, 0.315), /* Amarelo do Arsenal */
+        rgba(0, 0, 0, 0.7)      /* Preto */
+    ),
+    url('../../assets/images/backg.logo.jpg'); /* Imagem de fundo */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container img {
+    width: 120px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;  /* Texto branco para contraste */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave no texto */
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cf3b27;  /* Amarelo do Arsenal para o borda */
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d00000;  /* Vermelho do Arsenal no foco */
+    box-shadow: 0 0 5px rgba(0, 166, 251, 0.3);
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #d00000;  /* Vermelho do Arsenal */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2a1868;  /* Amarelo do Arsenal no hover */
+}
+
+.link-usuarios {
+    margin-top: 16px;
+    padding: 12px;
+    text-align: center;
+    display: block;
+    background-color: #f70800a1;  /* Amarelo do Arsenal */
+    color: rgb(0, 0, 0);  /* Texto preto */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-usuarios:hover {
+    background-color: #d00000;  /* Vermelho do Arsenal no hover */
+}
