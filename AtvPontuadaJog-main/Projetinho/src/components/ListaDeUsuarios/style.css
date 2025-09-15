@@ -1,0 +1,21 @@
+.lista-usuarios li {
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(208, 0, 0, 0.7); /* Vermelho do Arsenal */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff; /* Texto branco */
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.lista-usuarios li:hover {
+  background-color: rgba(0, 0, 255, 0.8); /* Azul do Arsenal ao passar o mouse */
+  color: #ffffff; /* Manter texto branco no hover */
+  transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+.lista-usuarios li strong {
+  font-weight: bold;
+  color: #fff; /* Texto forte em branco para destacar */
+}

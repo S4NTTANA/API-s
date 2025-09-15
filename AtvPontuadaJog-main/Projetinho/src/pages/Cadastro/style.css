@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background:
+        linear-gradient(to bottom right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+        url('../../assets/images/backg.logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pagina-cadastro {
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}

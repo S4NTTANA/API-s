@@ -1,0 +1,142 @@
+/* FUNDO COM IMAGEM E OVERLAY ESCURO */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../../assets/images/backg.logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Overlay escuro sobre o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* ajuste a opacidade conforme necessário */
+    z-index: -1;
+}
+
+/* CONTAINER PRINCIPAL */
+.pagina-bem-vindo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* CONTEÚDO COM GLASSMORPHISM */
+.conteudo {
+    margin: 60px auto;
+    padding: 40px 20px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+/* LOGO / BANNER */
+.imagem-banner {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* TEXTOS */
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.descricao {
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 8px;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 40px;
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.botao-cadastro {
+    padding: 14px 32px;
+    font-size: 18px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botao-cadastro:hover {
+    background-color: #0f172a;
+}
+
+.botao.google {
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.botao.google:hover {
+    background-color: #ffffff;
+    color: #1e3a8a;
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.rodape .menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.rodape .menu a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.rodape .menu a:hover {
+    color: #e0e0e0;
+}

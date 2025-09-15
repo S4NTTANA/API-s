@@ -1,0 +1,111 @@
+/* CONTAINER DO FORMULÁRIO */
+.container {
+    width: 100%;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* TÍTULO */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* FORMULÁRIO */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* INPUTS */
+input {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #aa2e2e;
+    background: rgba(255, 255, 255, 0.05);
+    color: #f1f1f1;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #c9c9c9;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f0b000;
+    box-shadow: 0 0 8px rgba(240, 176, 0, 0.3);
+}
+
+/* BOTÃO DE CADASTRO */
+.botao-cadastrar {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #b00000;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botao-cadastrar:hover {
+    background-color: #8b0000;
+}
+
+/* LINK DE USUÁRIOS */
+.link-usuarios {
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 14px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.link-usuarios:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* MENSAGEM DE FEEDBACK */
+.mensagem-feedback {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+}
+
+.mensagem-feedback.sucesso {
+    background-color: rgba(0, 128, 0, 0.6);
+    color: #ffffff;
+}
+
+.mensagem-feedback.erro {
+    background-color: rgba(128, 0, 0, 0.6);
+    color: #ffffff;
+}
